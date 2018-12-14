@@ -75,14 +75,8 @@ class GoogleAuth extends Eloquent
     {
         /*parent::__construct();*/
         $this->container = $container;
-        $this->view = $container->get('view');
         $this->DB = $container->get('db');
 
-        $origin = $this->container->request->getHeader('HTTP_ORIGIN');
-        $redirectUri = $this->container->request->getHeader('X-Google-Auth-Link');
-
-        $this->redirectUri = reset($redirectUri);
-        $this->origin = reset($origin);
         if (empty($this->origin)) {
             $this->origin = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'];
         }

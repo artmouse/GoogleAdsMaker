@@ -13,7 +13,6 @@
     "slim/http-cache": "*",
     "illuminate/database": "~5.1",
     "doctrine/doctrine-orm-module": "^1.1",
-    "phpmailer/phpmailer": "~6.0",
     "twig/twig": "*",
     "googleads/googleads-php-lib": "*",
     "ext-openssl": "*",
@@ -23,9 +22,7 @@
     "guzzlehttp/psr7": "^1.2",
     "phpdocumentor/reflection-docblock": "^4.0.0 || ^3.0.3",
     "symfony/serializer": "^2.8.0 || ^3.0.3 || ^4.0.0",
-    "google/apiclient": "^2.0",
-    "slim/twig-view": "^2.4",
-    "oscarotero/psr7-middlewares": "^3.21"
+    "google/apiclient": "^2.0"
   },
   "config": {
     "platform": {
@@ -37,7 +34,6 @@
       "Adson\\Middleware\\": "app/middleware",
       "Adson\\Model\\": "app/models",
       "Adson\\Model\\Google\\v1\\": "app/models/google/v1",
-      "Adson\\Includes\\": "app/includes"
     }
   }
 }
