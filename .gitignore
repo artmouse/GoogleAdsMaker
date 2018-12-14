@@ -1,0 +1,16 @@
+.idea
+.vs
+.vscode
+/vendor/
+/logs/*.log
+!/logs/README.md
+/bin/*
+!/bin/swagger
+/swagger.json
+app/templates/cache/*
+apidocs/api.html
+/apidocs/api.html
+app/dashboard/views/cache/*
+app/dashboard/views/cache
+/reports/
+/logs
