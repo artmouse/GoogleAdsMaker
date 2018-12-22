@@ -1,11 +1,5 @@
 <?php
-header('Cache-Control: no-cache, no-store, must-revalidate');
-header('Expires: Thu, 01 Jan 1970 00:00:00 GMT');
-header('Pragma: no-cache');
-//date_default_timezone_set('UTC');
 if (PHP_SAPI == 'cli-server') {
-    // To help the built-in PHP dev server, check if the request was actually for
-    // something which should probably be served as a static file
     $url  = parse_url($_SERVER['REQUEST_URI']);
     $file = __DIR__ . $url['path'];
     if (is_file($file)) {

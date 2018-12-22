@@ -3,7 +3,7 @@ define('MODE', 'dev');
 /* localhost cron settings */
 /*
  *
- * %progdir%\modules\wget\bin\wget.exe -q --no-cache http://anuka/makeAds -O %progdir%\userdata\temp\temp.txt
+ * %progdir%\modules\wget\bin\wget.exe -q --no-cache http://site/makeAds -O %progdir%\userdata\temp\temp.txt
  * */
 $logVersion = date('Y-m-d');
 return [
